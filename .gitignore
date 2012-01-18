@@ -1,0 +1,16 @@
+*~
+Makefile
+Makefile.in
+config.sub
+config.guess
+config.log
+config.status
+configure
+autom4te.cache/
+install-sh
+missing
+aclocal.m4
+build/
+ChangeLog
+libvirt-autobuild-*.tar.gz
+libvirt-autobuild.spec

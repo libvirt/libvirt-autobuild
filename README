@@ -1,0 +1,8 @@
+       libvirt automated build
+       =======================
+
+This is a trivial package which just provides the configuration files
+required to perform an automated build of libvirt and all related
+modules, using Test-AutoBuild (http://autobuild.org). The RPM spec
+file included ensures that all build pre-requisites are correctly
+installed

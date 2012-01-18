@@ -1,0 +1,37 @@
+# -*- rpm-spec -*-
+
+%define debug_package %{nil}
+
+Name: @PACKAGE@
+Version: @VERSION@
+Release: 1%{?dist}%{?extra_release}
+Summary: Automated build configuration for libvirt
+Group: Development/Tools
+License: LGPLv2+
+URL: http://libvirt.org/
+Source0: http://libvirt.org/autobuild/%{name}-%{version}.tar.gz
+Requires: perl-Test-AutoBuild
+Requires: perl-Test-AutoBuild-git
+
+# What follows is the list of all build dependancies for all
+# modules that are included in the autobuild config
+
+
+%description
+This package provides the configuration required to run
+automated builds of libvirt and all related tools and
+packages
+
+%prep
+%setup -q
+
+%build
+%configure
+%__make %{?_smp_mflags}
+
+%install
+%__make install DESTDIR=$RPM_BUILD_ROOT
+
+%files
+%defattr(-,root,root,-)
+%config(noreplace) %{_sysconfdir}/auto-build.d/auto-build-libvirt.conf
