@@ -135,6 +135,28 @@ Requires: vala-tools
 Requires: yajl-devel
 Requires: zlib-devel
 
+Requires: mingw32-binutils
+Requires: mingw32-cairo
+Requires: mingw32-curl
+Requires: mingw32-dlfcn
+Requires: mingw32-filesystem
+Requires: mingw32-gcc
+Requires: mingw32-gettext
+Requires: mingw32-glib2
+Requires: mingw32-gnutls
+Requires: mingw32-gtk2
+Requires: mingw32-gtk3
+Requires: mingw32-iconv
+Requires: mingw32-libgcrypt
+Requires: mingw32-libgpg-error
+Requires: mingw32-libssh2
+Requires: mingw32-libxml2
+Requires: mingw32-libxslt
+Requires: mingw32-portablexdr
+Requires: mingw32-readline
+Requires: mingw32-w32ap
+
+
 %description
 This package provides the configuration required to run
 automated builds of libvirt and all related tools and
